@@ -739,20 +739,51 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.container .collapse{
+  position: relative;
+}
+.container .collapse ul, .container .collapse ul > li{
+  position: static;
+}
+
 @media (min-width: 768px) {
-  .container {
+
+  .container, .container .collapse, .container img{
     width: 750px;
+  }
+  .container .image-full{
+  display:block;
+ }
+.container .image-mobile{
+  display:none;
+}
+  .container .collapse .navbar-nav {
+    width: 750px;
+    display:flex;
+    justify-content: space-between;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .container, .container .collapse, .container img {
+
     width: 970px;
+  }
+  .container .collapse .navbar-nav{
+    width: 970px;
+    display:flex;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container, .container .collapse, .container img {
     width: 1170px;
   }
+  .container .collapse .navbar-nav{
+    width: 1170px;
+    display:flex;
+    justify-content: space-between;
+  }
+
 }
 .container-fluid {
   padding-right: 15px;
@@ -1583,6 +1614,7 @@ table th[class*="col-"] {
   background-color: #ebcccc;
 }
 @media (max-width: 767px) {
+  
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
@@ -3011,6 +3043,7 @@ input[type="button"].btn-block {
   position: absolute;
   top: 100%;
   left: 0;
+  width:100%;
   z-index: 1000;
   display: none;
   float: left;
@@ -3036,6 +3069,9 @@ input[type="button"].btn-block {
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
+}
+.dropdown-menu li{
+  line-height: 10px;
 }
 .dropdown-menu > li > a {
   display: block;
@@ -3791,6 +3827,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 20px;
 }
 @media (max-width: 767px) {
+  .container .image-full{
+  display:none;
+  }
+
+  .container .image-mobile{
+    height:80px;
+    display:block;
+  }
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
