@@ -27,6 +27,7 @@ section,
 summary {
   display: block;
 }
+
 audio,
 canvas,
 progress,
@@ -474,6 +475,7 @@ p {
   font-weight: 200;
   line-height: 1.4;
 }
+
 @media (min-width: 768px) {
   .lead {
     font-size: 21px;
@@ -745,11 +747,18 @@ pre code {
 .container .collapse ul, .container .collapse ul > li{
   position: static;
 }
-
+@media (max-width: 345px){
+  .container .image-mobile {
+    width:250px;
+  }
+}
 @media (min-width: 768px) {
 
-  .container, .container .collapse, .container img{
+  .container{
     width: 750px;
+  }
+  .container .collapse,  .container img{
+    width: 720px;
   }
   .container .image-full{
   display:block;
@@ -764,9 +773,12 @@ pre code {
   }
 }
 @media (min-width: 992px) {
-  .container, .container .collapse, .container img {
+  .container {
 
     width: 970px;
+  }
+  .container .collapse,  .container img{
+    width: 940px;
   }
   .container .collapse .navbar-nav{
     width: 970px;
@@ -775,8 +787,11 @@ pre code {
   }
 }
 @media (min-width: 1200px) {
-  .container, .container .collapse, .container img {
+  .container {
     width: 1170px;
+  }
+  .container .collapse,  .container img{
+    width: 1140px;
   }
   .container .collapse .navbar-nav{
     width: 1170px;
@@ -1615,6 +1630,9 @@ table th[class*="col-"] {
 }
 @media (max-width: 767px) {
   
+  .menu-item-93 .dropdown-menu {
+      display:none;
+  }
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
@@ -1959,6 +1977,9 @@ select[multiple].input-lg {
   color: #737373;
 }
 @media (min-width: 768px) {
+  .menu-item-93 .dropdown-menu, .menu-item-93 .caret  {
+    display: block;
+  }
   .form-inline .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -3827,6 +3848,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 20px;
 }
 @media (max-width: 767px) {
+  .menu-item-93 .dropdown-menu, .menu-item-93 .caret  {
+    display: none;
+  }
+  .footer-options{
+    display:none;
+  }
   .container .image-full{
   display:none;
   }
@@ -4658,8 +4685,8 @@ a.thumbnail.active {
   border: 1px solid #ddd;
 }
 .list-group-item:first-child {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 .list-group-item:last-child {
   margin-bottom: 0;
