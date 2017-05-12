@@ -883,8 +883,18 @@ iframe{
 }
 
 
-
-
+#action-bar{
+  padding-right:0px;
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top:1px solid white;
+  background-color: #01264c;
+}
+#translate-bar{
+  border-top:1px solid white;
+  background-color: #01264c;
+}
 
 
 
@@ -10257,7 +10267,8 @@ section.tag{
 
 
 
-.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li:hover .dropdown-menu {
+.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li:hover .dropdown-menu,
+.navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li:hover .dropdown-menu  {
 
 
 
@@ -10277,7 +10288,8 @@ section.tag{
 
 
 
-.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu {
+.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu,
+.navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu {
 
 
 
@@ -10337,7 +10349,8 @@ section.tag{
 
 
 
-.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li {
+.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li,
+.navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu li{
 
 
 
@@ -10353,7 +10366,8 @@ section.tag{
 
 
 
-.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li a {
+.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li a,
+ .navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu li a{
 
 
 
@@ -10401,7 +10415,8 @@ section.tag{
 
 
 
-.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li a:hover {
+.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li a:hover,
+.navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu li a:hover {
 
 
 
@@ -10417,7 +10432,8 @@ section.tag{
 
 
 
-.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li:first-child a:after {
+.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li:first-child a:after,
+.navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu li:first-child a:after {
 
 
 
@@ -10469,7 +10485,8 @@ section.tag{
 
 
 
-.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li:first-child a:before {
+.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li:first-child a:before,
+.navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu li:first-child a:before {
 
 
 
@@ -10501,7 +10518,8 @@ section.tag{
 
 
 
-.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li:first-child a:hover:after {
+.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li:first-child a:hover:after,
+.navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu li:first-child a:hover:after {
 
 
 
@@ -10513,7 +10531,8 @@ section.tag{
 
 
 
-.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li:last-child {
+.navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li:last-child,
+.navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu li:last-child {
 
 
 
@@ -14624,7 +14643,9 @@ label.error:before {
 
   }
 
-
+.navbar-nav .menu-item-415{
+    display:none;
+  }
 
   .navbar-nav > li{
 
@@ -14639,6 +14660,8 @@ label.error:before {
 
 
   }
+
+  
 
 
 
@@ -14728,7 +14751,8 @@ label.error:before {
 
   }
 
-  .navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li a {
+  .navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu li a,
+  .navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu li a {
     font-size:12px;
     padding:2px;
     line-height: 15px;
@@ -16474,7 +16498,8 @@ label.error:before {
 
 
 
-  .navigation-wrapper .primary-navigation-wrapper header .navbar-nav li:hover .dropdown-menu {
+  .navigation-wrapper .primary-navigation-wrapper header .navbar-nav li:hover .dropdown-menu,
+  .navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li:hover .dropdown-menu{
 
 
 
@@ -16494,7 +16519,8 @@ label.error:before {
 
 
 
-  .navigation-wrapper .primary-navigation-wrapper header .navbar-nav li .dropdown-menu {
+  .navigation-wrapper .primary-navigation-wrapper header .navbar-nav li .dropdown-menu,
+  .navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu  {
 
 
 
@@ -16578,7 +16604,8 @@ label.error:before {
 
 
 
-  .navigation-wrapper .primary-navigation-wrapper header .navbar-nav li .dropdown-menu li {
+  .navigation-wrapper .primary-navigation-wrapper header .navbar-nav li .dropdown-menu li,
+  .navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu li {
 
 
 
@@ -16598,7 +16625,8 @@ label.error:before {
 
 
 
-  .navigation-wrapper .primary-navigation-wrapper header .navbar-nav li .dropdown-menu{
+  .navigation-wrapper .primary-navigation-wrapper header .navbar-nav li .dropdown-menu,
+  .navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu {
 
 
 
@@ -16610,7 +16638,8 @@ label.error:before {
 
 
 
-  .navigation-wrapper .primary-navigation-wrapper header .navbar-nav li:hover .dropdown-menu{
+  .navigation-wrapper .primary-navigation-wrapper header .navbar-nav li:hover .dropdown-menu,
+  .navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li:hover .dropdown-menu {
 
 
 
@@ -16622,7 +16651,8 @@ label.error:before {
 
 
 
-  .navigation-wrapper .primary-navigation-wrapper header .navbar-nav li .dropdown-menu li a {
+  .navigation-wrapper .primary-navigation-wrapper header .navbar-nav li .dropdown-menu li a,
+  .navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu li a {
 
 
 
@@ -16634,7 +16664,8 @@ label.error:before {
 
 
 
-  .navigation-wrapper .primary-navigation-wrapper header .navbar-nav li .dropdown-menu li a:after {
+  .navigation-wrapper .primary-navigation-wrapper header .navbar-nav li .dropdown-menu li a:after ,
+  .navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu li a:after{
 
 
 
@@ -16914,7 +16945,8 @@ label.error:before {
 
 
 
-  .navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu a {
+  .navigation-wrapper .primary-navigation-wrapper header nav .navbar-nav li .dropdown-menu a,
+  .navigation-wrapper .secondary-navigation-wrapper .secondary-navigation li .dropdown-menu a {
 
 
 
